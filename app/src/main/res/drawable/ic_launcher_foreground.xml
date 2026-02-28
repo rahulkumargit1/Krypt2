@@ -5,17 +5,12 @@
     android:viewportWidth="108"
     android:viewportHeight="108">
 
-    <!-- Outer glow ring -->
-    <path
-        android:fillColor="#1500E5FF"
-        android:pathData="M54,18 A36,36 0 1,1 53.99,18 Z" />
-
-    <!-- Lock body (rounded rectangle) -->
+    <!-- Lock body -->
     <path
         android:fillColor="#00E5FF"
         android:pathData="M38,52 L38,72 A4,4 0 0,0 42,76 L66,76 A4,4 0 0,0 70,72 L70,52 A4,4 0 0,0 66,48 L42,48 A4,4 0 0,0 38,52 Z" />
 
-    <!-- Lock shackle (arc) -->
+    <!-- Lock shackle -->
     <path
         android:strokeColor="#00E5FF"
         android:strokeWidth="5"
@@ -23,12 +18,10 @@
         android:strokeLineCap="round"
         android:pathData="M43,48 L43,40 A11,11 0 0,1 65,40 L65,48" />
 
-    <!-- Keyhole circle -->
-    <circle
+    <!-- Keyhole circle (drawn as path, not circle tag) -->
+    <path
         android:fillColor="#0D0D0D"
-        android:cx="54"
-        android:cy="62"
-        android:r="5" />
+        android:pathData="M54,57 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0" />
 
     <!-- Keyhole slot -->
     <path
